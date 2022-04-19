@@ -1,0 +1,93 @@
+body {
+    opacity: 1;
+    background-image: url("taustakuva.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.topic {
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.831);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    margin: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(194, 69, 69);
+
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(183, 31, 31);
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(166, 4, 4);
+}
+
+h6{
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(120, 4, 4);
+}
+
+img {
+    padding: 15px;
+    border-style: groove;
+    background-color: aliceblue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+p {
+    color:aliceblue;
+}
+
+a {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(162, 79, 240);
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+#table {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start; */
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+code{
+    color:chartreuse;
+}

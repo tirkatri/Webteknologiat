@@ -1,0 +1,30 @@
+.pagecontent{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 70px auto 50px;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(155, 17, 38);
+    text-align: center;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(44, 15, 21);
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(219, 139, 139);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(155, 17, 38);
+}

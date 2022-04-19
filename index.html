@@ -1,98 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML harjoitus</title>
-    </head>
 
-    <body>
-        <h1>HTML Tutorial</h1>
-        <h2>Johdanto</h2>
-        <p>Tervetuloa tutustumaan HTML -kielen perusteisiin!<br>
-            HTML (Hypertext Markup Language) on Web-kieli,
-            jolla määritetään verkkosivujen sisältöä ja rakennetta.<br>
-            Sivun rakenne muodostuu HTML-elementeistä, jotka määritetään HTML-tunnisteilla eli -tageilla.<br>
-            Useimmat tagit tulevat pareittain, ja ne sijoitetaan tekstin elementin sisällön alkuun ja loppuun.<br>
-            <br>
-            <a href="https://www.w3schools.com/html/default.asp">Tutustu kuhunkin osioon tarkemmin w3schools -sivustolla</a>
-        </p>
-        <h1>HTML-sivun rakenne</h1>
-        <p>HTML -dokumentin kirjoittaminen aloitetaan määrittämällä dokumentin alkuun dokumentin tyyppi <code>&lt!DOCTYPE html></code><br>
-            Sivuston sisältö kirjoitetaan <code>&lthtml>&lt/html></code> tagien sisälle.<br>
-            Itse dokumentti koostuu kahdesta perusosasta: <b>header</b> ja <b>body</b>.<br>
-            <a href="https://www.w3schools.com/html/html_basic.asp">Opiskele lisää 'Basic'</a>
-        </p>
-        <h2>Head</h2>
-        <p>HTML-dokumentin alussa esitetään ensimmäinen pääosa, <b>header</b><br>
-            <br><code>&lthead> <i>Header -osan sisältö </i> &lt/head></code><br>
-            <br>
-            Header osan sisällä ilmoitetaan sivuston sisältöön liittyviä tietoja,
-            jotka vaikuttavat tekstin sisällön toiminnallisuuteen ja muotoiluun<br>
-            (mm. title, metatagit, css ja javascript tiedostojen linkit)<br>
-            Headerin sisältämä teksti ei näy verkkosivulla.<br>
-            <a href="https://www.w3schools.com/html/html_head.asp">Opiskele lisää 'Head-element'</a>
-        </p>
-        <br>
-        <h2>Body</h2>
-        <p>
-            Header -osan jälkeen esitetään varsinaisen verkkosivun sisältö <b>body</b><br>
-            Verkkosivun sisältö rakennetaan erilaisten elementtien sisään.<br>
-            Elementeille voidaan määrittää luokkia ja tunnisteita, joiden avulla sivustolle voidaan määrittää muotoilu.
-        </p>
-        <h3>Otsikot</h3>
-        <p>Käytössä on yhteensä kuusi eritasoista otsikkoa:
-            <table>
-                <tr>
-                    <th><code>&lth1>&lt/h1></code></th>
-                    <th><h1>Pääotsikko</h1></th>
-                </tr>
-                <tr>
-                    <th><code>&lth2>&lt/h2></code></th>
-                    <td><h2>Alaotsikko</h2></td>
-                </tr>
-                <tr><td>...</td></tr>
-                <tr>
-                    <th><code>&lth6>&lt/h6></code></th>
-                    <th><h6>Alin otsikko</h6></th>
-                </tr>
-            </table><br>
-            <a href="https://www.w3schools.com/html/html_headings.asp">Opiskele lisää 'Headings'</a> 
-        </p>
-        <h3>Kappaleet</h3>
-        <p>
-            Tekstiosiot kirjoitetaan kappaletagien väliin<br>
-            <br><code>&ltp> <i> Sivuston sisältöä </i>&lt/p></code><br><br>
-            HTML ei tunnista kirjoitukseen 'Enter'-painikkeella lisättäviä rivivaihtoja.<br>
-            Rivinvaihdot lisätään yksittäisellä <code>&ltbr></code>-tagilla.<br>
-            <a href="https://www.w3schools.com/html/html_paragraphs.asp">Opiskele lisää 'Paragraphs'</a> 
-        </p>
-        <h3>Kuvat</h3>
-        <p>
-            Sivustolle upotettavat kuvat ilmaistaan kuvan sijaintiin viittaavalla linkillä:<br>
-            <code>&ltimg src="https://lab.fi/themes/custom/lab/lab-logo.svg" width="200" height="200"></code><br>
-            Linkki voi viitata joko paikalliseen tai ulkoiseen sijaintiin<br>
-            Kuvalle voidaan lisätä atribuutteja määrittämään esim. kuvan kokoa.<br>
-                <img src="https://lab.fi/themes/custom/lab/lab-logo.svg" alt="LAB-logo" width="200" height="200"><br>
-                
-           
-        
-                <a href="https://www.w3schools.com/html/html_images.asp">Opiskele lisää 'Images'</a>
-        </p>
-        <p>
-            <h3>Listat ja linkit</h3>
-            Listat voivat olla joko numeroituja <code>&ltol>&lt/ol></code> tai numeroimattomia <code>&ltul>&ltul></code><br>
-            Kukin listattava asia ilmaistaan <code>&ltil>&lt/il></code>-tageilla.<br>
-            <br>
-            Linkit lisätään tagien <code>&lta>&lt/a></code>-sisään. Tagille kirjataan määre sen mukaan, missä linkin sisältö sijaitsee.<br>
-            Tärkeimmät määreet ovat <code>name</code>, joka viittaa sivun sisäiseen sisältöön, sekä <code>href</code>, joka viittaa ulkoiseen sisältöön, ja koostuu kohdedokumentin URL:stä.<br>
-                <ul name="Esimerkki">
-                <li><a href="https://www.lab.fi/fi">LAB</a></li>
-                <code>&ltli>&lta href="https://www.lab.fi/fi">LAB&lt/a>&lt/li></code>
-                <li><a href="https:8//www.lut.fi/fi">LUT</a></li>
-                <code>&ltli>&lta href="https:8//www.lut.fi/fi">LUT&lt/a>&lt/li></code><br>     
-            </ul>
-            <a href="https://www.w3schools.com/html/html_lists.asp">Opiskele lisää 'Lists'</a><br>
-            <a href="https://www.w3schools.com/html/html_links.asp">Opiskele lisää 'Links'</a>
-        </p>
-    </body>
+<head>
+    <title>HTML harjoitus</title>
+    <link type="text/css" rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topic">
+            <div class="content">
+                <h1>HTML Tutorial</h1>
+                <h2>Johdanto</h2>
+                <p>Tervetuloa tutustumaan HTML -kielen perusteisiin!<br>
+                    HTML (Hypertext Markup Language) on Web-kieli,
+                    jolla määritetään verkkosivujen sisältöä ja rakennetta.<br>
+                    Sivun rakenne muodostuu HTML-elementeistä, jotka määritetään HTML-tunnisteilla eli -tageilla.<br>
+                    Useimmat tagit tulevat pareittain, ja ne sijoitetaan tekstin elementin sisällön alkuun ja
+                    loppuun.<br>
+                    <a href="https://www.w3schools.com/html/default.asp">Tutustu kuhunkin osioon tarkemmin w3schools
+                        -sivustolla</a>
+                </p>
+            </div>
+
+            <div class="content">
+                <h1>HTML-sivun rakenne</h1>
+
+                <p>HTML -dokumentin kirjoittaminen aloitetaan määrittämällä dokumentin alkuun dokumentin tyyppi
+                    <code>&lt!DOCTYPE html></code><br>
+                    Sivuston sisältö kirjoitetaan <code>&lthtml>&lt/html></code> tagien sisälle.
+                    Itse dokumentti koostuu kahdesta perusosasta: <b>header</b> ja <b>body</b>.<br>
+                    <a href="https://www.w3schools.com/html/html_basic.asp">Opiskele lisää 'Basic'</a>
+                </p>
+                <h2>Head</h2>
+                <p>HTML-dokumentin alussa esitetään ensimmäinen pääosa, <b>header</b>
+                    <code>&lthead> <i>Header -osan sisältö </i> &lt/head></code><br>
+                    Header osan sisällä ilmoitetaan sivuston sisältöön liittyviä tietoja,
+                    jotka vaikuttavat tekstin sisällön toiminnallisuuteen ja muotoiluun
+                    (mm. title, metatagit, css ja javascript tiedostojen linkit)
+                    Headerin sisältämä teksti ei näy verkkosivulla.<br>
+                    <a href="https://www.w3schools.com/html/html_head.asp">Opiskele lisää 'Head-element'</a>
+                </p>
+                <div class="content">
+                    <h2>Body</h2>
+                    <p>
+                        Header -osan jälkeen esitetään varsinaisen verkkosivun sisältö <b>body</b><br>
+                        Verkkosivun sisältö rakennetaan erilaisten elementtien sisään.<br>
+                        Elementeille voidaan määrittää luokkia ja tunnisteita, joiden avulla sivustolle voidaan
+                        määrittää
+                        muotoilu.
+                    </p>
+                </div>
+                <div class="content">
+                    <h3>Otsikot</h3>
+                    <p>Käytössä on yhteensä kuusi eritasoista otsikkoa:
+                    <table>
+                        <tr>
+                            <th><code>&lth1>&lt/h1></code></th>
+                            <td>
+                                <h1>Pääotsikko</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><code>&lth2>&lt/h2></code></th>
+                            <td>
+                                <h2>Alaotsikko</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>...</code></td>
+                        </tr>
+                        <tr>
+                            <th><code>&lth6>&lt/h6></code></th>
+                            <td>
+                                <h6>Alin otsikko</h6>
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="https://www.w3schools.com/html/html_headings.asp">Opiskele lisää 'Headings'</a>
+                    </p>
+                </div>
+                <div class="content">
+                    <h3>Kappaleet</h3>
+                    <p>
+                        Tekstiosiot kirjoitetaan kappaletagien väliin<br>
+                        <br><code>&ltp> <i> Sivuston sisältöä </i>&lt/p></code><br><br>
+                        HTML ei tunnista kirjoitukseen 'Enter'-painikkeella lisättäviä rivivaihtoja.<br>
+                        Rivinvaihdot lisätään yksittäisellä <code>&ltbr></code>-tagilla.<br>
+                        <a href="https://www.w3schools.com/html/html_paragraphs.asp">Opiskele lisää 'Paragraphs'</a>
+                    </p>
+                </div>
+                <div class="content">
+                    <h3>Kuvat</h3>
+                    <p>
+                        Sivustolle upotettavat kuvat ilmaistaan kuvan sijaintiin viittaavalla linkillä:<br>
+                        <code>&ltimg src="https://lab.fi/themes/custom/lab/lab-logo.svg" width="200" height="200"></code><br>
+                        Linkki voi viitata joko paikalliseen tai ulkoiseen sijaintiin<br>
+                        Kuvalle voidaan lisätä atribuutteja määrittämään esim. kuvan kokoa.<br>
+                        <img src="https://lab.fi/themes/custom/lab/lab-logo.svg" alt="LAB-logo" width="200"
+                            height="200"><br>
+
+
+
+                        <a href="https://www.w3schools.com/html/html_images.asp">Opiskele lisää 'Images'</a>
+                    </p>
+                </div>
+                <div class="content">
+                    <h3>Listat ja linkit</h3>
+                    <p>Listat voivat olla joko numeroituja <code>&ltol>&lt/ol></code> tai numeroimattomia
+                        <code>&ltul>&ltul></code><br>
+                        Kukin listattava asia ilmaistaan <code>&ltil>&lt/il></code>-tageilla.<br>
+                        <br>
+                        Linkit lisätään tagien <code>&lta>&lt/a></code>-sisään. Tagille kirjataan määre sen mukaan,
+                        missä
+                        linkin
+                        sisältö sijaitsee.<br>
+                        Tärkeimmät määreet ovat <code>name</code>, joka viittaa sivun sisäiseen sisältöön, sekä
+                        <code>href</code>,
+                        joka viittaa ulkoiseen sisältöön, ja koostuu kohdedokumentin URL:stä.<br>
+                    <ul name="Esimerkki">
+                        <li><a href="https://www.lab.fi/fi">LAB</a></li>
+                        <code>&ltli>&lta href="https://www.lab.fi/fi">LAB&lt/a>&lt/li></code>
+                        <li><a href="https:8//www.lut.fi/fi">LUT</a></li>
+                        <code>&ltli>&lta href="https:8//www.lut.fi/fi">LUT&lt/a>&lt/li></code><br>
+                    </ul>
+                    <a href="https://www.w3schools.com/html/html_lists.asp">Opiskele lisää 'Lists'</a><br>
+                    <a href="https://www.w3schools.com/html/html_links.asp">Opiskele lisää 'Links'</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>

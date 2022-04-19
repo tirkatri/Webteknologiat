@@ -1,0 +1,14 @@
+textarea{
+    height: 100px;
+    width: 100%;
+}
+label{
+    margin: 50px;
+}
+
+.input-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5 px;
+}
