@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="flexbox.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Flexbox</title>
+</head>
+
+<body class=" container">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#topic">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#containerItems">Container</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#containerItems">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#grid">Bootstrap grid</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#alignJustify">Align items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#alignJustify">Justify content</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="topic" class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>Topic</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+    <div class="container my-5 text-center">
+        <div id="container">
+            <h1>Flexbox peruskäsitteitä</h1>
+            <p>Flexbox -muotoilu perustuu parent (container) ja child (item) elementteihin.</p>
+            <p>Containerit määrittävät sisällön yläluokat, ja kuinka sen sisällä olevat itemit asettuvat käytettävissä
+                olevaan tilaan.</p>
+            <p>Kunkin containerin sisällä elementtien pääsuunta voidaan määrittää joko vaakaan (row) tai pystyyn
+                (column)</p>
+            <p>Elementtien virtaussuunta on oletuksena vaaka-askelilla (main) vasemmalta oikealle, ja pystyakselilla
+                ylhäältä alaspäin</p>
+        </div>
+        <div class="row text-center justify-content-center">
+            <div id="container" class="col-sm-4">
+                <img src="https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg" class="rounded"
+                    alt="Flexbox Container">
+                <p></p>
+            </div>
+            <div id="container" class="col-sm-4">
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg" class="rounded" alt="Flex-order">
+                <p></p>
+            </div>
+            <div id="container" class="col-sm-4">
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg" class="rounded"
+                    alt="Flex-wrap">
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container mt-5 ">
+        <div id="containerItems" class="row text-center justify-content-center">
+            <div id="container" class="col-sm-4">
+                <h3>Container</h3>
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg" class="rounded"
+                    alt="Flexbox Container">
+                <p>Containerin eli ns. parent elementin avulla voidaan hallita sen sisältämien elementtien asettelua.
+                </p>
+
+            </div>
+            <div class="col-sm-4">
+                <h3>Items</h3>
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg" class="rounded"
+                    alt="Flexbox Items">
+                <p>Item eli ns. child elementit sijoitellaan containereiden sisään.</p>
+
+            </div>
+        </div>
+    </div>
+    <div id="grid" class="container mt-4 p-5 bg-primary text-white text-center rounded">
+        <h1>Bootstrap grid</h1>
+        <p>Bootstrap ruudukossa (grid) näyttöruutu jaetaan leveyssuunnassa 12 yhtä suureen alueeseen (span).</p>
+        <p>Teksti ja kuvaelementtejä lisätessä määritetään, kuinka monen osan levyinen kukin elementti on.</p>
+        <p>Elementit asettuvat automaattisesti aloilleen Flexbox sääntöjen mukaan niin, että sivuston asettelu on
+            optimaalinen kulloinkin käytössä olevalle näytölle</p>
+    </div>
+        <div id="alignJustify" class="container">
+            <div class="col-sm-2">
+                <p>Bootstrapin avulla flexbox muotoiluja voidaan tehdä suoraa elementtien luokkien avulla.</p>
+                <p>Jotta Bootstrapia voidaan käyttää, tulee Bootstrap-kirjaston linkki liittää html-tiedoston head-osioon.</p>
+                <p>On tärkeä huomioida, että Bootstrap-luokkien muotoilut voivat yliajaa muut tyylitiedostot (.css)</p>
+            </div>
+        
+            <div class="col-sm-2">
+                <h3>Align items</h3>
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg" class="rounded"
+                    alt="Align items">
+            </div>
+            <div class="col-sm-2">
+                <h3>Justify content</h3>
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg" class="rounded"
+                    alt="Flexbox Items">
+            </div>
+            <div class="col-sm-2">
+                <p>Vaihtoehtoisesti muotoiluja voidaan tehdä myös css-tiedostoon.</p>
+                <p>Myös css-tiedosto kuuluu linkittää html-tiedoston head-osioon </p>
+                <p>(tässä containerissa align-items = "center", justify-content="space between")</p>
+            </div>
+        </div>
+        
+      
+    
+</body>
+
+</html>
